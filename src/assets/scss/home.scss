@@ -1,0 +1,145 @@
+.navbar-brand {
+    width: 8rem;
+    img {
+        width: 100%;
+    }
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    .nav-link {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md {
+        flex-grow: 0 !important;
+        justify-content: space-between !important;
+    }
+}
+
+.front-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://live.staticflickr.com/65535/49727496021_91873d89b0_z.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.front-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: auto 20%;
+    text-align: center;
+}
+
+marquee {
+    display: flex;
+    padding: 2rem 0;
+    background: #74ebd5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #acb6e5,
+        #74ebd5
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.about-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fcfcfc;
+    padding: 3% 0;
+
+    .about-page-img {
+        border-radius: 50%;
+        width: 30rem;
+        height: 30rem;
+        box-shadow: -1px 8px 22px 16px #e5e5e5;
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+.about-page-content p,
+ol > li {
+    font-size: 1.7rem;
+    line-height: 2;
+}
+
+.title{
+    padding: 2% 0;
+}
+
+.about-page-content{
+    padding: 6%;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        border-bottom: 1px solid #ebe9e9;
+        margin: 0;
+        text-align: center;
+        padding: 1.2rem 0;
+
+        &:hover {
+            background-color: rgb(228, 226, 226) !important;
+            color: #000;
+        }
+    }
+
+    .front-page-content {
+        margin: auto 5% !important;
+    }
+
+    .display-1 {
+        font-size: 3.5rem !important;
+    }
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    .front-page-content {
+        margin: auto 2%;
+    }
+
+    .front-page-content {
+        height: 70%;
+    }
+
+    .about-page-img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .title{
+        padding: 5% 0;
+    }
+}
