@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './home/Navbar'
 import FrontPage from './home/FrontPage'
+import Content from './home/Content'
 import About from './home/About'
 
 export class LandingPage extends Component {
@@ -9,7 +10,9 @@ export class LandingPage extends Component {
             <div>
                 <Navbar />
                 <FrontPage />
-                <About />
+                <Content />
+                {/* <FrontPage />
+                <About /> */}
             </div>
         )
     }
